@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Real Time Cross Browser Manual Testing",
+  "description": "This extension allows user to replicate workflow on other browser",
+  "version": "1.0",
+  "background": "back.html",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "views/popup.html"
+  },
+   
+    "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["public/js/jquery-1.7.2.min.js" , "public/js/jquery-ui-1.10.0.custom.js","public/js/Custom/replicate.js","public/js/Custom/custom.js","public/js/Custom/dialogs.js","public/js/Custom/extension.js"],
+	  "css":["public/css/style.css","public/css/css/ui-darkness/jquery-ui-1.10.2.custom.css"],
+	  "run_at": "document_end",
+	  "all_frames": true
+    }
+  ],
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*", "background"
+	
+  ]
+  
+}

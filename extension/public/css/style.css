@@ -1,0 +1,42 @@
+body {
+        background-color:#F5DA81;
+      }
+
+.ui-widget-shadow{
+		-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);  
+         -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+		 opacity: .90;
+ }   
+.ui-dialog-titlebar{
+	background:#fff;
+} 
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-widget-shadow.ui-draggable.ui-resizable {
+	z-index: 9999999999999999999;
+}
+
+#custom_m_e{
+	width:250px;
+	height:100px;
+	z-index:9999999999;
+	}
+
+#extension_m_c{
+	width:350px;
+}
+
+#status_m_c{
+	color: green;
+}
+
+#stat_m_c{
+
+	list-style-type:none; ;
+}
+
+.info{
+	list-style-type:circle; ;
+}
+.option{
+	list-style-type:circle; ;
+}

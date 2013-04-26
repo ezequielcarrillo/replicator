@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="/public/js/Custom/extension.js"></script>
 	<link rel="stylesheet" type="text/css" href="/public/css/style.css">
   </head>
-  <body>
+  <body style="background-color:#F5DA81;">
 	<div id="extension_m_c">
 		<ul class='info'>
 			<li>Click <span><a href="#" id="open_server_m_c"> Here</a></span> to run the server</li>
@@ -30,7 +30,14 @@
 		<ul class='option'>
 			<li><span><a href="#" id="advance_options_m_c">Advanced Options</a></span></li>
 			<li class='option_m_c'>save workflow
-				<input type='checkbox' checked='flase'></input>
+				<input type='checkbox' checked='flase' id="workflow"></input>
+			</li>
+			<li class='option_m_c'>
+				<input type='text' id="test-name" placeholder="Enter Test Name"></input>
+			</li>
+			<li class='option_m_c'>
+				<input type='file' id="openTest" placeholder="Select Test"></input>
+				<input type="submit" value="Run Test" id="run_test"/>
 			</li>
 		</ul>	
 	</div>	

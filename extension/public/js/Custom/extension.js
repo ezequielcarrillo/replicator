@@ -5,18 +5,21 @@ function runextension() {
         tabUrl = tab.url;
         var url = tab.url;
         
-    $.ajax({
-        url: 'http://localhost:4567/open', 
-        type: "POST",        
-        data: {url: url},   
-        success: function(data, textStatus){
-           // alert('request successful');
-        },
-        error: function(xhr, textStatus, errorThrown){
-        	
-            alert(xhr); alert(textstatus); alert(errorThrown);
-        }
-    });
+    
+
+    //  var url = 'http://www.belarixsf.com'
+        $.ajax({
+            url: 'http://localhost:4567/open', 
+            type: "POST",        
+            data: {url: url},   
+            success: function(data, textStatus){
+               // alert('request successful');
+            },
+            error: function(xhr, textStatus, errorThrown){
+            	
+                alert(xhr); alert(textstatus); alert(errorThrown);
+            }
+        });
     });
 }
 
@@ -32,8 +35,33 @@ function advanced(){
 
 }
 
-	document.addEventListener('DOMContentLoaded', function() {
+function workflow(){
+
+    $('#test-name').toggle();
+}
+
+function opentest(){
+
+    $('#run_test').hide();
+
+        $('#openTest').change(function(){
        
+              var testName = $('#openTest').val();
+
+             if (testName == ''){
+
+                $('#run_test').hide();
+            }
+           else{
+
+               $('#run_test').show();
+            }
+
+        });
+
+}
+	document.addEventListener('DOMContentLoaded', function() {
+        
         $('.more_m_c').hide();
         $('.option_m_c').hide();
 
@@ -52,4 +80,11 @@ function advanced(){
 
             advanced();
         });
+
+        $('#workflow').click(function(){
+
+            workflow();
+        });
+
+        opentest();
 });

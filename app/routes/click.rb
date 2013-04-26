@@ -28,7 +28,9 @@ post '/click' do
 	selectorAction = selectoraction("#{action}","#{input_value}")
 	
 	browser = findBrowser(url)
+	Writetest( "#{browserSelector}"+ objectconstructor(selectorType, selectoridentifier, selectorAction))
+	
 	puts "#{browserSelector}"+ objectconstructor(selectorType, selectoridentifier, selectorAction)
 	eval("#{browserSelector}"+ objectconstructor(selectorType, selectoridentifier, selectorAction))
-	
+
 end

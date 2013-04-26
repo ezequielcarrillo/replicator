@@ -23,6 +23,22 @@ function runextension() {
     });
 }
 
+function createtestplan(){
+
+    var testplanName = $('#test-name').val();
+    $.ajax({
+            type: 'POST',
+            url: 'http://localhost:4567/createtestplan',
+            data: {testplanName: testplanName},
+            success: function() {},
+            error: function() {
+                dialog();
+            },
+        });
+
+
+}
+
 function more(){
 
     $('.more_m_c').toggle();
@@ -87,4 +103,13 @@ function opentest(){
         });
 
         opentest();
+
+        $('#test-name').blur(function(){
+            
+            if ($('#test-name').val() !=''){
+        
+                createtestplan();
+            }
+
+        });
 });

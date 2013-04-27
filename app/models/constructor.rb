@@ -1,3 +1,4 @@
+#search for browser
 def findBrowser(identifier)
 
 	identifier = identifier.split("?").first
@@ -5,7 +6,7 @@ def findBrowser(identifier)
 	return Watir::IE.attach(:url, urls)
 end
 
-
+#watir object type
 def selectorType(tag,type)
 	
 	# .text.include?,  .h1-h6, .table, .area, .modal_dialog,
@@ -81,7 +82,7 @@ def selectorType(tag,type)
 	
 end
 
-
+#watir object selector
 def selectorproperties(id, e_class, type, tag ,text ,val, name)
 	
 	if tag == 'DD' or tag == 'LABEL' or tag == 'PRE' or tag == 'MAP' or tag == 'P' or tag == 'TR' or tag == 'SPAN' or tag == 'STRONG' or tag == 'TABLE' or tag == 'TBODY' or tag == 'TD'
@@ -116,7 +117,7 @@ def selectorproperties(id, e_class, type, tag ,text ,val, name)
 	
 end
 
-
+#build watir action
 def selectoraction(action,value)
 	
 	if action == 'click' #element

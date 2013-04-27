@@ -1,5 +1,3 @@
-
-
 set :environment, :development
 configure :development do
 

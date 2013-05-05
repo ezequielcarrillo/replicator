@@ -1,1 +1,4 @@
-#Real Time Testing Cross Browser Replicator Tool. Sinatra - Chrome Extension —
+#Replicate actions on other browser.
+Chrome extension based application . 
+sinatra server. 
+watir. 

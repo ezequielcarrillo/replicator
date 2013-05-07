@@ -1,3 +1,4 @@
+#elements interaction
 post '/click' do
 
 	e_id = params[:id]

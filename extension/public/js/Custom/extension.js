@@ -1,3 +1,4 @@
+//this js is executed on the extension pop up windows
 function runextension() {
 
       chrome.tabs.getSelected(null, function(tab) {
@@ -5,9 +6,6 @@ function runextension() {
         tabUrl = tab.url;
         var url = tab.url;
         
-    
-
-    //  var url = 'http://www.belarixsf.com'
         $.ajax({
             url: 'http://localhost:4567/open', 
             type: "POST",        

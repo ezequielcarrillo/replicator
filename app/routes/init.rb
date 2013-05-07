@@ -1,3 +1,5 @@
 require_relative 'browser.rb'
 require_relative 'click.rb'
+require_relative 'mouseover.rb'
+require_relative 'error.rb'
 require_relative 'testplan.rb'

@@ -13,15 +13,6 @@ post '/click' do
 	title = params[:title]
 
 	
-	puts "id"		+ "#{e_id}"
-	puts "class"	+ "#{e_class}"
-	puts "url"		+ "#{url}"
-	puts "action"	+ "#{action}"
-	puts "tag"		+ "#{e_tag}"
-	puts "type"		+ "#{e_type}"
-	puts "input" 	+ "#{input_value}"
-	puts "name"		+ "#{e_name}"
-	
 	browserSelector ="browser"
 	selectorType =selectorType(e_tag,e_type)
 	selectoridentifier = selectorproperties("#{e_id}", "#{e_class}", "#{e_type}", "#{e_tag}" ,"#{e_text}" ,"#{e_val}","#{e_name}")

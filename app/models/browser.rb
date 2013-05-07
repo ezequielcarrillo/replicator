@@ -5,3 +5,4 @@ def openbrowser(identifier)
 	browser.goto "#{identifier}"
 
 end
+

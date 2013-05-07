@@ -14,7 +14,7 @@
     "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["public/js/jquery-1.7.2.min.js" , "public/js/jquery-ui-1.10.0.custom.js","public/js/Custom/replicate.js","public/js/Custom/custom.js","public/js/Custom/dialogs.js","public/js/Custom/extension.js"],
+      "js": ["public/js/jquery-1.7.2.min.js" , "public/js/jquery-ui-1.10.0.custom.js","public/js/Custom/replicate.js","public/js/Custom/custom.js","public/js/Custom/dialogs.js","public/js/Custom/extension.js","public/js/Custom/mouseover.js"],
 	  "css":["public/css/style.css","public/css/css/ui-darkness/jquery-ui-1.10.2.custom.css"],
 	  "run_at": "document_end",
 	  "all_frames": true

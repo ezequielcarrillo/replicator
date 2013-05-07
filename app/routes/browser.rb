@@ -1,5 +1,6 @@
 post '/open' do
-	puts params[:url]
+
+  puts params[:url]
 	 identifier = params[:url]
 	 openbrowser(identifier)
 

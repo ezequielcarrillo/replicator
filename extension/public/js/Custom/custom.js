@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	function open(){
 		
-		var url = location.href
+		var url = location.href;
 		
 		$.ajax({
 			type: 'POST',

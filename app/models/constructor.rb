@@ -1,6 +1,6 @@
 def findBrowser(identifier)
 
-	identifier = identifier.split("?").first
+	identifier = identifier.split('?').first
 	urls = Regexp.new '.*' 
 	return Watir::IE.attach(:url, urls)
 end

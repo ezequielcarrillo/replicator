@@ -1,2 +1,2 @@
 
-browser.button(:id =>'',:class =>'',:name =>'submit').click
+browser.div(:id =>'',:class =>'example').click

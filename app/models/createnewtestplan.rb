@@ -1,5 +1,7 @@
 def createnewtestplan(testplanname)
 
-	  outFile = File.new("./testPlan/"+"#{testplanName}","w")
+	  outFile = File.new("../../testPlan/"+"#{testplanname}","w")
       outFile.close
+
 end
+
